@@ -3,7 +3,7 @@ function s = compare(x,y)
 
 	anewt = divdiff(x, y, n);
 
-	[a b c d] spliney(x, y, n);
+	[a b c d]=spliney(x, y, n);
 
 	xplot = linspace(-5, 5, 100);
 
@@ -16,7 +16,7 @@ function s = compare(x,y)
 
 		yplot2(i) = splineeval(xplot(i), a, b, c, d, x, n);
 
-
+	plot(xplot, yplot1, xplot, yplot2);
 
 end
 

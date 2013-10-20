@@ -7,7 +7,7 @@ function anewt = divdiff(x, y, n);
 			table(i,j) = (table(i, j-1)-table(i-1, j-1))/(table(i, 1) - table(i-(j-2), 1));
 		end
 	end
-	anewt = zeros(0, n)
+	anewt = zeros(0, n);
 	for j=2:n+1
 		for i=1:n
 			if i == j-1
